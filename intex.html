@@ -1,9 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Jenkins Project</title>
+    <title>Hotel Management</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+        }
+
+        /* Navbar */
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        /* Home Section */
+        #home {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #home h1 {
+            font-size: 40px;
+        }
+
+        /* Section Common */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* Menu Cards */
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* About */
+        #about {
+            background: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello Jenkins Deployment 🚀</h1>
+
+<!-- Navbar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+</nav>
+
+<!-- Home -->
+<section id="home">
+    <h1>Welcome to My Hotel 🏨</h1>
+    <p>Delicious Food | Comfortable Stay | Best Experience</p>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+    <h1>Our Menu</h1>
+
+    <div class="menu-container">
+        <div class="card">🍗 Chicken Biryani <br> ₹150</div>
+        <div class="card">🍕 Pizza <br> ₹120</div>
+        <div class="card">🍔 Burger <br> ₹80</div>
+        <div class="card">🥤 Juice <br> ₹50</div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h1>About Us</h1>
+    <p>
+        We provide high-quality food and excellent service.
+        Our hotel is known for comfort, taste, and customer satisfaction.
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 My Hotel | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
